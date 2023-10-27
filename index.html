@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- adding the favicon icon to the site -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./icons8-alarm-clock-emoji-96.png"
+    />
+
+    <!-- linking the CSS file -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- defining the title of the site -->
+    <title>Alarm Clock</title>
+  </head>
+
+  <body>
+    <!-- html body mainly divided into 2 parts : (1) Clockpart (2) taglinepart -->
+
+    <!-- (1)tagline part -->
+    <div class="clockpart">
+        
+      <!-- clockpart have one sub part which is the main clock -->
+      <div class="wrapper">
+        <!-- image for the clock above realtime time display -->
+        <img id="clocksvg" src="./alarm-clock-svgrepo-com.svg" alt="Clock" />
+        <!-- realtime timevalue that will be changed with the javascript -->
+        <h1>XX:XX:XX P.M</h1>
+        <!-- div for containing the time setting values -->
+        <div class="innercontent">
+          <div class="column">
+            <select>
+              <option value="Hour" selected hidden>Hour</option>
+            </select>
+          </div>
+          <div class="column">
+            <select>
+              <option value="Minute" selected hidden>Minute</option>
+            </select>
+          </div>
+          <div class="column">
+            <select>
+              <option value="AM/PM" selected hidden>AM/PM</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- button for setting the alarm and discarding the alarm -->
+        <button>Set Alarm</button>
+      </div>
+    </div>
+
+    <!-- (2) Taglinepart -->
+    <div id="taglinepart">
+      <h1>Rise and Shine with Every Chime!</h1>
+    </div>
+
+    <!-- adding/linking javascript file to the HTML file  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
